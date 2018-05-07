@@ -1,2 +1,0 @@
-# AlgorithmPrep
-Algorithm Preparation
