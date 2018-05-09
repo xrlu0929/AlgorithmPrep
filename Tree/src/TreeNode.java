@@ -13,6 +13,7 @@ public class TreeNode {
 //    }
 
     /*
+        in a binary search tree
         find
      */
     /*
@@ -24,21 +25,21 @@ public class TreeNode {
         }else if (root.key == target) {
             return true;
         }
-        while(root!=null) {
-            if (target < root.key) {
-                findTreeNodeRec(root.left, target);
-            } else {
-                findTreeNodeRec(root.left, target);
-            }
+
+        if (target < root.key) {
+            return findTreeNodeRec(root.left, target);
+        } else {
+            return findTreeNodeRec(root.right, target);
         }
+
     }
     /*
         find iterative
      */
     public boolean findTreeNodeIte(TreeNode root, int target){
-        while(root!=null) {
-
-        }
+//        while(root!=null) {
+//
+//        }
         return false;
     }
 
@@ -47,7 +48,9 @@ public class TreeNode {
             return new TreeNode(target);
         }
 
-
+        else {
+            return new TreeNode(target);
+        }
     }
 
 }
