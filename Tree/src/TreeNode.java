@@ -19,12 +19,18 @@ public class TreeNode {
         find recursive
      */
     public boolean findTreeNodeRec(TreeNode root, int target){
+        if(root== null) {
+            return false;
+        }else if (root.key == target) {
+            return true;
+        }
         while(root!=null) {
-            if(target< root.key) {
-                findTreeNodeRec(root.)
+            if (target < root.key) {
+                findTreeNodeRec(root.left, target);
+            } else {
+                findTreeNodeRec(root.left, target);
             }
         }
-        return false;
     }
     /*
         find iterative
