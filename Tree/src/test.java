@@ -6,8 +6,12 @@ public class test {
         TreeNode root = new TreeNode(10);
         root.left = new TreeNode(9);
         root.right = new TreeNode(12);
+        System.out.println("BST find target-recursion");
         System.out.println("Expected: true  " + root.findTreeNodeRec(root, 9));
         System.out.println("Expected: false " + root.findTreeNodeRec(root, 19));
+
+        System.out.println("BST find target-iterative");
+
     }
 
 }
